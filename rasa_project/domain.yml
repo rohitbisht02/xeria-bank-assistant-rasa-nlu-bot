@@ -1,0 +1,155 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - check_balance
+  - account_opening
+  - savings_account
+  - current_account
+  - debit_card
+  - credit_card
+  - card_block
+  - card_lost
+  - pin_reset
+  - account_statement
+  - loan_information
+  - personal_loan
+  - home_loan
+  - fixed_deposit
+  - branch_locator
+  - complaint_registration
+  - net_banking_issue
+  - affirm
+  - deny
+  - thank_you
+  - repeat
+  - confused
+  - account_services
+  - card_services
+  - loan_services
+  - human_support
+  - fallback
+
+responses:
+
+  utter_greet:
+    - text: "Hello! I'm the Xeria Bank Assistant. How can I help you with your banking needs today?"
+    - text: "Hi there! Welcome to Xeria Bank. What can I assist you with?"
+    - text: "Greetings! I'm here to help with your account, cards, loans, and more. What do you need?"
+
+  utter_goodbye:
+    - text: "Thank you for banking with Xeria. Have a great day!"
+    - text: "Goodbye! Feel free to reach out anytime you need assistance."
+    - text: "Thanks for chatting with Xeria Bank Assistant. Take care!"
+
+  utter_check_balance:
+    - text: "To check your account balance, please log in to Xeria Net Banking or the Xeria Mobile App and navigate to the Accounts section."
+
+  utter_account_opening:
+    - text: "Opening an account with Xeria Bank is simple. You can apply online through our website or app."
+
+  utter_savings_account:
+    - text: "Xeria Bank's Savings Account offers competitive interest rates and banking benefits."
+
+  utter_current_account:
+    - text: "Xeria Bank's Current Account is designed for businesses and professionals."
+
+  utter_debit_card:
+    - text: "Xeria Bank debit cards provide cashback offers, contactless payments, and global acceptance."
+
+  utter_credit_card:
+    - text: "Xeria Bank offers credit cards with reward points, cashback, and airport lounge access."
+
+  utter_card_block:
+    - text: "To block your card immediately, use the Xeria Mobile App or call the 24x7 helpline."
+
+  utter_card_lost:
+    - text: "Please block your card immediately and request a replacement card."
+
+  utter_pin_reset:
+    - text: "You can reset your card PIN through the app, net banking, or an ATM."
+
+  utter_account_statement:
+    - text: "You can download your statement from Net Banking or the Mobile App."
+
+  utter_loan_information:
+    - text: "Xeria Bank offers Personal Loans, Home Loans, Vehicle Loans, and more."
+
+  utter_personal_loan:
+    - text: "Personal Loans offer quick approval with minimal documentation."
+
+  utter_home_loan:
+    - text: "Home Loans offer attractive rates and flexible repayment periods."
+
+  utter_fixed_deposit:
+    - text: "Fixed Deposits are available from 7 days to 10 years with competitive interest."
+
+  utter_branch_locator:
+    - text: "Please share your city or pincode to locate the nearest branch."
+
+  utter_complaint_registration:
+    - text: "You can register a complaint via app, website, or customer support."
+
+  utter_net_banking_issue:
+    - text: "Try resetting your password or clearing browser cache."
+
+  utter_affirm:
+    - text: "Great. How else may I assist you today?"
+
+  utter_deny:
+    - text: "No problem. Let me know if you need any other banking assistance."
+
+  utter_thank_you:
+    - text: "You're welcome. Happy to help."
+
+  utter_repeat:
+    - text: "Certainly. Could you tell me which information you would like me to repeat?"
+
+  utter_confused:
+    - text: "I'd be happy to clarify. Please tell me which part was unclear."
+ 
+  utter_account_services:
+  - text: |
+      Available account services:
+      • Balance Enquiry
+      • Statement
+      • Savings Account
+      • Current Account
+      • Account Opening
+
+  utter_card_services:
+  - text: |
+      Available card services:
+      • Debit Card
+      • Credit Card
+      • Block Card
+      • Lost Card
+      • PIN Reset
+
+  utter_loan_services:
+  - text: |
+     Available loan services:
+      • Home Loan
+      • Personal Loan
+      • Loan Information
+
+  utter_human_support:
+  - text: |
+      I am unable to fully resolve your request.
+
+      Please contact Xeria Bank Customer Support:
+
+      📞 Phone: 1800-XXX-XXXX
+      📧 Email: support@xeriabank.com
+
+      Our representatives will be happy to assist you.
+
+  utter_fallback:
+    - text: "I didn't understand that. Please rephrase your banking question."
+
+actions: []
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
