@@ -2,7 +2,7 @@
 
 ### Rasa NLU Powered Banking Support Assistant
 
-![Xeria Bank Assistant Bot](xeria-bank-assistant_bot.png)
+![Xeria Bank Assistant Bot](xeria-bank-assistant-rasa-nlu-bot/assets/xeria-bank-assistant_bot.png)
 
 > A banking support chatbot built using **Rasa Open Source NLU** and **Streamlit**, designed to understand customer intent, classify banking queries, and provide instant assistance through a conversational interface.
 
