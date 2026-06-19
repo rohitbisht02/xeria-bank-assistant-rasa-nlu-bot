@@ -76,7 +76,7 @@ The project runs completely offline and does not use:
 
 The main interface displays the banking assistant, quick service shortcuts, session information, and Rasa server status.
 
-![Main Dashboard](xeria-bank-assistant_bot.png)
+![Main Dashboard](assets/xeria-bank-assistant_bot.png)
 
 ---
 
@@ -84,7 +84,7 @@ The main interface displays the banking assistant, quick service shortcuts, sess
 
 The assistant successfully detects greeting intents and responds appropriately.
 
-![Greeting Intent](Greeting.png)
+![Greeting Intent](assets/Greeting.png)
 
 ---
 
@@ -92,7 +92,7 @@ The assistant successfully detects greeting intents and responds appropriately.
 
 Customers can ask about banking products such as home loans and receive relevant responses.
 
-![Banking Query](Banking%20Query.png)
+![Banking Query](assets/Banking%20Query.png)
 
 ---
 
@@ -100,7 +100,7 @@ Customers can ask about banking products such as home loans and receive relevant
 
 One of the biggest improvements over the original chatbot is the ability to predict user intent with confidence scores.
 
-![Confidence Score](Confidence%20Score.png)
+![Confidence Score](assets/Confidence%20Score.png)
 
 ---
 
@@ -114,7 +114,7 @@ The assistant can understand conversational phrases such as:
 * Repeat
 * Clarification Requests
 
-![Casual Conversation](Casual%20Conversation.png)
+![Casual Conversation](assets/Casual%20Conversation.png)
 
 ---
 
@@ -122,15 +122,14 @@ The assistant can understand conversational phrases such as:
 
 When the chatbot cannot fully resolve an issue, it escalates the user to customer support.
 
-![Human Escalation](Human%20Escalation.png)
-
+![Human Escalation](assets/Human%20Escalation.png)
 ---
 
 ## 🧠 Rasa Model Training
 
 The chatbot model was trained locally using Rasa Open Source.
 
-![Rasa Training](rasa_training.png)
+![Rasa Training](assets/rasa_training.png)
 
 ---
 
@@ -138,7 +137,7 @@ The chatbot model was trained locally using Rasa Open Source.
 
 The trained model is loaded into a Rasa server and exposed through REST APIs consumed by the Streamlit frontend.
 
-![Rasa Server](rasa_server.png)
+![Rasa Server](assets/rasa_server.png)
 
 ---
 
