@@ -1,0 +1,149 @@
+version: "3.1"
+
+rules:
+
+- rule: Say hello whenever the user greets
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Say goodbye whenever the user says goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: Trigger fallback when NLU confidence is low
+  steps:
+    - intent: nlu_fallback
+    - action: utter_fallback
+
+- rule: Respond to balance enquiry
+  steps:
+    - intent: check_balance
+    - action: utter_check_balance
+
+- rule: Respond to account opening query
+  steps:
+    - intent: account_opening
+    - action: utter_account_opening
+
+- rule: Respond to savings account query
+  steps:
+    - intent: savings_account
+    - action: utter_savings_account
+
+- rule: Respond to current account query
+  steps:
+    - intent: current_account
+    - action: utter_current_account
+
+- rule: Respond to debit card query
+  steps:
+    - intent: debit_card
+    - action: utter_debit_card
+
+- rule: Respond to credit card query
+  steps:
+    - intent: credit_card
+    - action: utter_credit_card
+
+- rule: Respond to card block request
+  steps:
+    - intent: card_block
+    - action: utter_card_block
+
+- rule: Respond to lost card report
+  steps:
+    - intent: card_lost
+    - action: utter_card_lost
+
+- rule: Respond to pin reset request
+  steps:
+    - intent: pin_reset
+    - action: utter_pin_reset
+
+- rule: Respond to account statement request
+  steps:
+    - intent: account_statement
+    - action: utter_account_statement
+
+- rule: Respond to general loan information query
+  steps:
+    - intent: loan_information
+    - action: utter_loan_information
+
+- rule: Respond to personal loan query
+  steps:
+    - intent: personal_loan
+    - action: utter_personal_loan
+
+- rule: Respond to home loan query
+  steps:
+    - intent: home_loan
+    - action: utter_home_loan
+
+- rule: Respond to fixed deposit query
+  steps:
+    - intent: fixed_deposit
+    - action: utter_fixed_deposit
+
+- rule: Respond to branch locator query
+  steps:
+    - intent: branch_locator
+    - action: utter_branch_locator
+
+- rule: Respond to complaint registration request
+  steps:
+    - intent: complaint_registration
+    - action: utter_complaint_registration
+
+- rule: Respond to net banking issue report
+  steps:
+    - intent: net_banking_issue
+    - action: utter_net_banking_issue
+
+- rule: affirm response
+  steps:
+    - intent: affirm
+    - action: utter_affirm
+
+- rule: deny response
+  steps:
+    - intent: deny
+    - action: utter_deny
+
+- rule: thank you response
+  steps:
+    - intent: thank_you
+    - action: utter_thank_you
+
+- rule: repeat response
+  steps:
+    - intent: repeat
+    - action: utter_repeat
+
+- rule: confused response
+  steps:
+    - intent: confused
+    - action: utter_confused
+
+
+- rule: account services
+  steps:
+    - intent: account_services
+    - action: utter_account_services
+
+- rule: card services
+  steps:
+    - intent: card_services
+    - action: utter_card_services
+
+- rule: loan services
+  steps:
+    - intent: loan_services
+    - action: utter_loan_services
+
+- rule: Human support
+  steps:
+    - intent: human_support
+    - action: utter_human_support

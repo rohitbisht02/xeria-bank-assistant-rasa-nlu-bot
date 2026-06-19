@@ -1,0 +1,1347 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hii
+    - hiii
+    - hello
+    - hey
+    - hey there
+    - hello there
+    - good morning
+    - good afternoon
+    - good evening
+    - greetings
+    - yo
+    - anyone there
+    - can you help me
+    - hello bank
+    - hi bank
+    - hi xeria
+    - hello xeria
+    - hey xeria
+    - good day
+    - nice to meet you
+    - how are you
+    - how are you doing
+    - is anyone available
+    - can someone assist me
+    - i need some help
+    - i need assistance
+    - i have a question
+    - can i ask something
+    - i want some information
+    - i need banking help
+    - can you help me with banking
+    - hello customer support
+    - hello support team
+    - hi support
+    - are you online
+    - are you available
+    - is this xeria bank
+    - am i connected to xeria
+    - can we chat
+    - let's talk
+    - i need guidance
+    - i need help with my account
+    - i would like some assistance
+    - somebody help me please
+    - hello can you hear me
+    - hi there bank assistant
+    - hey buddy
+    - hello friend
+    - hi good to see you
+
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - bye bye
+    - see you
+    - see you later
+    - talk to you later
+    - catch you later
+    - have a nice day
+    - have a great day
+    - thanks bye
+    - thank you goodbye
+    - goodbye xeria
+    - bye xeria
+    - exiting now
+    - exit
+    - close chat
+    - end chat
+    - end conversation
+    - terminate chat
+    - i am done
+    - i'm done
+    - my query is resolved
+    - my issue is solved
+    - thanks for the help
+    - thank you for your assistance
+    - appreciate your help
+    - thanks for supporting me
+    - that's all for now
+    - that will be all
+    - no more questions
+    - i have no more questions
+    - i got the information i needed
+    - i got my answer
+    - thanks i am leaving
+    - okay bye
+    - alright bye
+    - ok goodbye
+    - goodbye and take care
+    - have a good evening
+    - have a good morning
+    - have a good day
+    - speak later
+    - we will talk later
+    - ending this chat
+    - disconnect chat
+    - leaving now
+    - logging off
+    - signing off
+    - farewell
+    - thanks and goodbye
+    - goodbye bank assistant
+
+
+- intent: check_balance
+  examples: |
+    - check my balance
+    - what is my account balance
+    - show my balance
+    - can i see my balance
+    - how much money do i have
+    - what is the available balance
+    - tell me my balance
+    - balance enquiry
+    - account balance enquiry
+    - current balance
+    - remaining balance
+    - check account balance
+    - can you show my account balance
+    - i want to know my balance
+    - let me know my balance
+    - how much balance is left
+    - how much money is in my account
+    - what funds do i have available
+    - show available funds
+    - display my balance
+    - balance information
+    - savings account balance
+    - current account balance
+    - please check my balance
+    - can i know my current balance
+    - account balance please
+    - what's my balance
+    - whats my account balance
+    - tell me how much money i have
+    - how much cash is in my account
+    - balance status
+    - can you check my balance
+    - i need a balance enquiry
+    - show me my available balance
+    - what is my latest balance
+    - can i view my balance
+    - i want to check my account funds
+    - available account balance
+    - remaining account balance
+    - how much is left in my account
+    - check balance for my account
+    - bank balance inquiry
+    - balance check
+    - balance details
+    - account funds available
+    - how much money remains
+    - check my bank balance
+    - show bank account balance
+    - what balance do i have
+    - can i get my balance details
+
+- intent: account_opening
+  examples: |
+    - open a bank account
+    - create a new account
+    - how can i open an account
+    - i want to open an account
+    - account opening process
+    - open account online
+    - create bank account
+    - account registration
+    - start a new account
+    - open an account with xeria bank
+    - i need a new bank account
+    - how do i create a bank account
+    - help me open an account
+    - what is required to open an account
+    - how can i become a customer
+    - i want to register for a bank account
+    - open a savings account
+    - open a current account
+    - new account application
+    - account opening requirements
+    - what documents are needed to open an account
+    - how do i apply for a bank account
+    - can i open an account online
+    - where can i open a bank account
+    - account creation process
+    - open my first bank account
+    - i would like to open an account
+    - guide me through account opening
+    - i need information about account opening
+    - what is the procedure to open an account
+    - register a new bank account
+    - bank account setup
+    - account enrollment
+    - how long does account opening take
+    - account opening assistance
+    - can i create an account from home
+    - online account registration
+    - new customer account opening
+    - open an account today
+    - help me become a customer
+    - i need a savings account
+    - i need a current account
+    - can i start a new account
+    - what are the eligibility criteria for opening an account
+    - how do i sign up for a bank account
+    - account application
+    - open a personal bank account
+    - create an account for banking services
+    - account onboarding process
+    - how can i get started with xeria bank
+
+- intent: savings_account
+  examples: |
+    - tell me about savings account
+    - savings account details
+    - savings account benefits
+    - savings account information
+    - what is a savings account
+    - explain savings account
+    - savings account features
+    - savings account charges
+    - savings account interest
+    - minimum balance for savings account
+    - what are the benefits of a savings account
+    - how does a savings account work
+    - savings account eligibility
+    - who can open a savings account
+    - savings account requirements
+    - tell me the features of a savings account
+    - what is the interest rate on savings accounts
+    - do you offer savings accounts
+    - savings account options
+    - available savings account types
+    - best savings account
+    - personal savings account information
+    - savings account facilities
+    - savings account advantages
+    - savings account services
+    - what documents are needed for a savings account
+    - can i open a savings account online
+    - savings account opening requirements
+    - monthly charges for savings account
+    - annual charges for savings account
+    - does a savings account require minimum balance
+    - what happens if minimum balance is not maintained
+    - savings account rules
+    - savings account policy
+    - compare savings account plans
+    - savings account schemes
+    - savings account for students
+    - savings account for salaried employees
+    - savings account for senior citizens
+    - savings account withdrawal limits
+    - savings account transaction limits
+    - interest earned on savings account
+    - account maintenance charges for savings account
+    - savings account customer benefits
+    - why should i open a savings account
+    - can you explain your savings account plans
+    - available savings account products
+    - tell me more about savings banking
+    - information regarding savings account
+    - help me understand savings accounts
+
+
+
+- intent: savings_account
+  examples: |
+    - tell me about savings account
+    - savings account details
+    - savings account benefits
+    - savings account information
+    - what is a savings account
+    - explain savings account
+    - savings account features
+    - savings account charges
+    - savings account interest
+    - minimum balance for savings account
+    - what are the benefits of a savings account
+    - how does a savings account work
+    - savings account eligibility
+    - who can open a savings account
+    - savings account requirements
+    - tell me the features of a savings account
+    - what is the interest rate on savings accounts
+    - do you offer savings accounts
+    - savings account options
+    - available savings account types
+    - best savings account
+    - personal savings account information
+    - savings account facilities
+    - savings account advantages
+    - savings account services
+    - what documents are needed for a savings account
+    - can i open a savings account online
+    - savings account opening requirements
+    - monthly charges for savings account
+    - annual charges for savings account
+    - does a savings account require minimum balance
+    - what happens if minimum balance is not maintained
+    - savings account rules
+    - savings account policy
+    - compare savings account plans
+    - savings account schemes
+    - savings account for students
+    - savings account for salaried employees
+    - savings account for senior citizens
+    - savings account withdrawal limits
+    - savings account transaction limits
+    - interest earned on savings account
+    - account maintenance charges for savings account
+    - savings account customer benefits
+    - why should i open a savings account
+    - can you explain your savings account plans
+    - available savings account products
+    - tell me more about savings banking
+    - information regarding savings account
+    - help me understand savings accounts
+
+
+
+
+- intent: current_account
+  examples: |
+    - current account details
+    - current account information
+    - tell me about current account
+    - current account features
+    - current account benefits
+    - open current account
+    - current account charges
+    - current account requirements
+    - current account minimum balance
+    - business account information
+    - what is a current account
+    - explain current account
+    - current account for business
+    - company account details
+    - current account eligibility
+    - how does a current account work
+    - benefits of current account
+    - current account facilities
+    - business banking account
+    - professional current account
+    - corporate current account
+    - current account services
+    - current account options
+    - available current account plans
+    - current account opening requirements
+    - who can open a current account
+    - documents required for current account
+    - current account transaction limits
+    - current account maintenance charges
+    - monthly charges for current account
+    - annual charges for current account
+    - does current account earn interest
+    - current account overdraft facility
+    - overdraft on current account
+    - current account for startups
+    - current account for shop owners
+    - current account for small business
+    - current account for companies
+    - current account for firms
+    - merchant current account
+    - business account opening process
+    - compare current account plans
+    - current account banking services
+    - current account withdrawal limits
+    - current account deposit limits
+    - can i open a current account online
+    - current account customer benefits
+    - information regarding current account
+    - help me understand current accounts
+    - best current account for business
+
+
+
+- intent: debit_card
+  examples: |
+    - debit card information
+    - tell me about debit cards
+    - debit card details
+    - apply for debit card
+    - how can i get a debit card
+    - request a debit card
+    - new debit card request
+    - debit card benefits
+    - debit card features
+    - debit card charges
+    - annual charges for debit card
+    - debit card fees
+    - debit card limit
+    - transaction limit on debit card
+    - cash withdrawal limit on debit card
+    - daily debit card limit
+    - how to activate debit card
+    - activate my debit card
+    - debit card activation process
+    - how do i use a debit card
+    - debit card usage guide
+    - debit card services
+    - debit card facilities
+    - replace debit card
+    - debit card replacement
+    - renew my debit card
+    - debit card renewal
+    - international debit card
+    - domestic debit card
+    - debit card eligibility
+    - who can get a debit card
+    - debit card application process
+    - debit card request status
+    - how long does it take to get a debit card
+    - debit card delivery time
+    - debit card linked to savings account
+    - debit card linked to current account
+    - contactless debit card
+    - visa debit card information
+    - rupay debit card information
+    - mastercard debit card information
+    - debit card purchase limit
+    - online transaction limit on debit card
+    - can i shop online with debit card
+    - debit card security features
+    - debit card cashback offers
+    - debit card rewards
+    - help me with my debit card
+    - information regarding debit card
+    - explain debit card services
+
+
+- intent: credit_card
+  examples: |
+    - credit card details
+    - credit card information
+    - tell me about credit cards
+    - apply for credit card
+    - how can i get a credit card
+    - new credit card application
+    - credit card benefits
+    - credit card features
+    - credit card rewards
+    - credit card cashback offers
+    - credit card annual fee
+    - credit card charges
+    - credit card interest rate
+    - credit card eligibility
+    - who can apply for a credit card
+    - credit card requirements
+    - credit card application process
+    - credit card approval process
+    - how long does credit card approval take
+    - premium credit card information
+    - travel credit card benefits
+    - shopping credit card rewards
+    - cashback credit card details
+    - reward points on credit card
+    - how do reward points work
+    - credit card spending limit
+    - credit card limit information
+    - increase my credit card limit
+    - how is credit card limit decided
+    - credit card welcome benefits
+    - best credit card for rewards
+    - best credit card for travel
+    - best credit card for shopping
+    - compare credit card plans
+    - available credit cards
+    - xeria credit card options
+    - credit card membership fee
+    - joining fee for credit card
+    - annual membership charges
+    - credit card offers
+    - credit card discounts
+    - credit card emi facility
+    - convert purchases into emi
+    - credit card payment options
+    - how do credit cards work
+    - explain credit card services
+    - business credit card information
+    - corporate credit card details
+    - information regarding credit cards
+    - help me choose a credit card
+
+
+- intent: card_block
+  examples: |
+    - block my card
+    - please block my card
+    - urgently block my card
+    - freeze my card
+    - disable my card
+    - stop my card immediately
+    - deactivate my card
+    - restrict my card usage
+    - block my debit card
+    - block my credit card
+    - freeze my debit card
+    - freeze my credit card
+    - disable my debit card
+    - disable my credit card
+    - stop all transactions on my card
+    - prevent card transactions
+    - secure my card immediately
+    - i want to block my card
+    - i need to block my card
+    - help me block my card
+    - card security issue block card
+    - unauthorized activity block card
+    - suspicious transaction block card
+    - somebody is using my card block it
+    - emergency card block
+    - immediate card blocking required
+    - lock my card
+    - temporarily lock my card
+    - lock my debit card
+    - lock my credit card
+    - card compromise block it
+    - stop card usage
+    - turn off my card
+    - deactivate card services
+    - block card access
+    - restrict transactions on my card
+    - suspend my card
+    - suspend debit card
+    - suspend credit card
+    - emergency freeze card
+    - urgent card security assistance
+    - block my banking card
+    - i suspect fraud block my card
+    - protect my account by blocking card
+    - card needs to be blocked now
+    - can you block my card
+    - how do i block my card
+    - process for blocking a card
+    - card blocking assistance
+    - help me secure my card immediately
+
+
+- intent: card_lost
+  examples: |
+    - i lost my card
+    - my card is lost
+    - i cannot find my card
+    - i can't find my card
+    - my debit card is lost
+    - my credit card is lost
+    - misplaced my card
+    - i misplaced my debit card
+    - i misplaced my credit card
+    - my card is missing
+    - debit card missing
+    - credit card missing
+    - lost atm card
+    - i lost my atm card
+    - i cannot locate my card
+    - my banking card is missing
+    - somebody stole my card
+    - my card was stolen
+    - my debit card was stolen
+    - my credit card was stolen
+    - i think my card was stolen
+    - someone took my card
+    - card theft report
+    - stolen bank card
+    - stolen debit card
+    - stolen credit card
+    - i left my card somewhere
+    - i forgot where i kept my card
+    - i don't know where my card is
+    - my card disappeared
+    - i am unable to find my debit card
+    - i am unable to find my credit card
+    - card lost while travelling
+    - lost my wallet and card
+    - my wallet containing my card is lost
+    - i lost access to my card
+    - help my card is missing
+    - i need help finding my card
+    - what should i do if my card is lost
+    - card lost assistance
+    - report lost card
+    - report missing card
+    - report stolen card
+    - i need a replacement card
+    - how can i replace my lost card
+    - replacement for lost debit card
+    - replacement for lost credit card
+    - card recovery assistance
+    - my bank card is nowhere to be found
+    - i have lost my banking card
+
+
+- intent: pin_reset
+  examples: |
+    - reset my pin
+    - i want to reset my pin
+    - forgot my pin
+    - i forgot my atm pin
+    - i forgot my debit card pin
+    - i forgot my credit card pin
+    - change my pin
+    - help me change my pin
+    - update my pin
+    - create a new pin
+    - generate a new pin
+    - regenerate my pin
+    - set a new pin
+    - pin reset help
+    - pin reset request
+    - atm pin issue
+    - debit card pin issue
+    - credit card pin issue
+    - pin related problem
+    - i cannot remember my pin
+    - i don't remember my pin
+    - my pin is not working
+    - invalid pin issue
+    - incorrect pin problem
+    - how can i reset my pin
+    - how do i change my atm pin
+    - how do i generate a new pin
+    - pin generation process
+    - pin regeneration process
+    - help me recover my pin
+    - create fresh pin for my card
+    - update atm pin
+    - update debit card pin
+    - update credit card pin
+    - new pin request
+    - can i reset my pin online
+    - online pin reset
+    - mobile banking pin reset
+    - net banking pin reset
+    - pin change assistance
+    - reset debit card pin
+    - reset credit card pin
+    - forgot card pin
+    - forgot atm pin number
+    - i need a new pin
+    - issue with my pin
+    - card pin support
+    - help me set a new pin
+    - pin reset for my card
+    - i would like to change my card pin
+
+
+- intent: account_statement
+  examples: |
+    - get account statement
+    - download account statement
+    - download my statement
+    - bank statement
+    - account statement
+    - transaction history
+    - show transaction history
+    - recent transactions
+    - account summary
+    - monthly statement
+    - yearly statement
+    - send my statement
+    - email my statement
+    - statement request
+    - i need my bank statement
+    - can i get my account statement
+    - provide my account statement
+    - show my account statement
+    - generate account statement
+    - statement for my account
+    - account activity report
+    - account transaction report
+    - get transaction details
+    - statement for last month
+    - statement for this month
+    - statement for last year
+    - detailed account statement
+    - mini statement
+    - show recent account activity
+    - send statement to my email
+    - email account statement
+    - download transaction report
+    - get account history
+    - account history details
+    - banking transaction history
+    - view account statement
+    - access my statement
+    - account records
+    - account transaction summary
+    - statement copy
+    - duplicate statement request
+    - print account statement
+    - request account statement
+    - statement download assistance
+    - statement related query
+    - i want my transaction history
+    - provide recent transactions
+    - account statement assistance
+    - help me get my statement
+    - show all account transactions
+
+
+- intent: loan_information
+  examples: |
+    - loan information
+    - loan details
+    - tell me about loans
+    - what loans do you offer
+    - available loans
+    - loan products
+    - loan options
+    - banking loan services
+    - information about loans
+    - explain loan facilities
+    - what types of loans are available
+    - loan plans
+    - financing options
+    - borrowing options
+    - loan assistance
+    - loan related information
+    - help me understand loans
+    - loan schemes
+    - loan services offered by the bank
+    - bank loan information
+    - can you explain your loans
+    - details about available loan products
+    - what loan products do you have
+    - loan categories
+    - information regarding bank loans
+    - loan features
+    - benefits of bank loans
+    - loan eligibility information
+    - loan application information
+    - interest rates for loans
+    - available financing plans
+    - compare loan options
+    - guidance on loans
+    - loan enquiry
+    - general loan enquiry
+    - explain your lending services
+    - loan requirements
+    - loan documentation requirements
+    - how do loans work
+    - can you provide loan information
+    - i want information about loans
+    - tell me your financing options
+    - what are the available borrowing solutions
+    - loan support
+    - help me choose a loan
+    - available credit facilities
+    - details of all loan offerings
+    - loan product comparison
+    - overview of bank loans
+    - complete loan information
+
+
+- intent: personal_loan
+  examples: |
+    - personal loan details
+    - personal loan information
+    - apply for personal loan
+    - i need a personal loan
+    - personal loan eligibility
+    - personal loan requirements
+    - personal loan benefits
+    - personal loan features
+    - personal loan interest rate
+    - personal financing options
+    - unsecured loan information
+    - unsecured personal loan
+    - salary based personal loan
+    - quick personal loan
+    - instant personal loan details
+    - how can i apply for a personal loan
+    - personal loan application process
+    - documents required for personal loan
+    - personal loan approval process
+    - how long does personal loan approval take
+    - maximum personal loan amount
+    - minimum personal loan amount
+    - personal loan repayment options
+    - personal loan tenure details
+    - flexible personal loan repayment
+    - affordable personal loan
+    - personal loan charges
+    - personal loan processing fee
+    - personal loan emi information
+    - calculate personal loan emi
+    - compare personal loan options
+    - available personal loan plans
+    - personal loan assistance
+    - personal loan support
+    - personal borrowing options
+    - financing for personal expenses
+    - loan for personal use
+    - personal expense loan
+    - emergency personal loan
+    - personal cash loan information
+    - help me get a personal loan
+    - guide me about personal loans
+    - can i get a personal loan
+    - explain personal loan services
+    - tell me about personal loans
+    - information regarding personal loan
+    - personal credit loan details
+    - personal loan enquiry
+    - general personal loan information
+    - best personal loan options
+
+
+- intent: home_loan
+  examples: |
+    - home loan details
+    - home loan information
+    - apply for home loan
+    - i need a home loan
+    - home loan eligibility
+    - home loan requirements
+    - home loan benefits
+    - home loan features
+    - home loan interest rate
+    - housing loan information
+    - housing finance options
+    - mortgage information
+    - mortgage loan details
+    - property loan information
+    - loan for buying a house
+    - house purchase loan
+    - home financing options
+    - how can i apply for a home loan
+    - home loan application process
+    - documents required for home loan
+    - home loan approval process
+    - how long does home loan approval take
+    - maximum home loan amount
+    - home loan repayment options
+    - home loan tenure details
+    - home loan emi information
+    - calculate home loan emi
+    - compare home loan options
+    - available home loan plans
+    - home loan assistance
+    - home loan support
+    - financing for a new house
+    - loan to purchase property
+    - residential property loan
+    - house financing solutions
+    - home ownership loan
+    - loan for first home purchase
+    - affordable home loan
+    - low interest home loan
+    - home construction loan
+    - loan for constructing a house
+    - home renovation loan information
+    - property financing assistance
+    - can i get a home loan
+    - explain home loan services
+    - tell me about home loans
+    - information regarding housing loans
+    - home loan enquiry
+    - general home loan information
+    - best home loan options
+
+
+- intent: fixed_deposit
+  examples: |
+    - fixed deposit details
+    - fixed deposit information
+    - tell me about fixed deposits
+    - fd information
+    - fd details
+    - fixed deposit interest rate
+    - fixed deposit rates
+    - fd rates
+    - create fixed deposit
+    - open fixed deposit
+    - start a fixed deposit
+    - invest in fixed deposit
+    - invest in fd
+    - fixed deposit account
+    - fd account
+    - fixed deposit benefits
+    - fd benefits
+    - fixed deposit features
+    - fixed deposit plans
+    - available fixed deposit schemes
+    - fixed deposit options
+    - term deposit information
+    - term deposit details
+    - what is a fixed deposit
+    - how does a fixed deposit work
+    - fixed deposit eligibility
+    - who can open a fixed deposit
+    - fixed deposit requirements
+    - documents required for fixed deposit
+    - minimum amount for fixed deposit
+    - maximum amount for fixed deposit
+    - fixed deposit tenure options
+    - fd tenure details
+    - long term fixed deposit
+    - short term fixed deposit
+    - compare fixed deposit plans
+    - best fixed deposit rates
+    - senior citizen fixed deposit
+    - special fd rates
+    - fixed deposit maturity amount
+    - fd maturity value
+    - fixed deposit calculator
+    - calculate fd returns
+    - expected return on fixed deposit
+    - fixed deposit withdrawal rules
+    - premature withdrawal of fd
+    - fixed deposit investment options
+    - explain fixed deposit services
+    - fixed deposit enquiry
+    - help me with fixed deposit information
+
+
+- intent: branch_locator
+  examples: |
+    - nearest branch
+    - find branch
+    - branch near me
+    - locate branch
+    - bank branch location
+    - nearby bank branch
+    - nearest xeria branch
+    - where is your branch
+    - branch address
+    - branch details
+    - find the nearest bank office
+    - nearest banking branch
+    - nearest customer service branch
+    - closest branch to me
+    - closest xeria branch
+    - show nearby branches
+    - branch locator
+    - locate nearest branch
+    - branch location information
+    - branch contact details
+    - branch phone number
+    - branch timings
+    - branch working hours
+    - what are your branch timings
+    - is there a branch nearby
+    - find a branch in my city
+    - branch in my area
+    - local bank branch
+    - nearest office location
+    - nearest service center
+    - nearest bank office
+    - where can i find a branch
+    - help me find a branch
+    - xeria branch near me
+    - branch search
+    - nearby branch details
+    - branch location assistance
+    - nearest atm
+    - find nearest atm
+    - atm near me
+    - locate atm
+    - nearest xeria atm
+    - atm location information
+    - nearby atm details
+    - branch and atm locator
+    - nearest banking service point
+    - where is the closest atm
+    - show me nearby atms
+    - branch enquiry
+    - help me locate a branch
+
+- intent: complaint_registration
+  examples: |
+    - register complaint
+    - file complaint
+    - customer complaint
+    - raise complaint
+    - raise an issue
+    - report a problem
+    - submit complaint
+    - lodge complaint
+    - grievance registration
+    - service complaint
+    - complaint request
+    - i want to register a complaint
+    - i need to file a complaint
+    - help me submit a complaint
+    - i want to report an issue
+    - i have a complaint
+    - i am dissatisfied with the service
+    - poor customer service complaint
+    - complaint regarding banking service
+    - complaint about my account
+    - complaint about my card
+    - complaint about a transaction
+    - complaint about branch service
+    - complaint against bank service
+    - how can i register a complaint
+    - what is the complaint process
+    - customer grievance
+    - banking grievance
+    - submit a grievance
+    - raise a service request complaint
+    - register service complaint
+    - complaint support
+    - issue reporting assistance
+    - help me lodge a complaint
+    - i need complaint assistance
+    - complaint tracking request
+    - complaint registration process
+    - unresolved issue complaint
+    - escalate my complaint
+    - escalate an issue
+    - i want to report bad service
+    - complaint regarding staff behavior
+    - complaint regarding delay in service
+    - i want to raise a grievance
+    - official complaint registration
+    - report customer service issue
+    - help me file a grievance
+    - complaint enquiry
+    - complaint submission help
+    - i need to report a banking problem
+
+
+- intent: net_banking_issue
+  examples: |
+    - internet banking not working
+    - net banking issue
+    - net banking problem
+    - cannot login to net banking
+    - unable to login to internet banking
+    - online banking error
+    - login problem
+    - mobile banking issue
+    - banking website not working
+    - password problem
+    - online banking help
+    - account login failed
+    - internet banking login failed
+    - net banking login failed
+    - i cannot access my account online
+    - unable to access internet banking
+    - unable to access net banking
+    - online banking is down
+    - banking portal is not working
+    - website login issue
+    - mobile banking app not working
+    - banking app issue
+    - banking app login problem
+    - forgot net banking password
+    - reset internet banking password
+    - online banking password issue
+    - net banking password issue
+    - invalid login credentials error
+    - login authentication problem
+    - otp not received for net banking
+    - internet banking otp issue
+    - unable to verify otp
+    - transaction failed in net banking
+    - online banking transaction error
+    - net banking service unavailable
+    - banking website error
+    - internet banking service unavailable
+    - unable to sign in to banking portal
+    - login timeout issue
+    - session expired during login
+    - online banking access issue
+    - trouble accessing net banking
+    - net banking support
+    - internet banking support
+    - help me with online banking
+    - technical issue with net banking
+    - banking login assistance
+    - unable to use internet banking services
+    - online banking not responding
+    - i need help with net banking
+
+
+- intent: fallback
+  examples: |
+    - random text
+    - abcxyz
+    - qwertyuiop
+    - asdfghjkl
+    - tell me a joke
+    - sing a song
+    - recommend a movie
+    - suggest a netflix series
+    - what is the weather today
+    - weather forecast
+    - who won the world cup
+    - tell me about cricket
+    - what is the capital of france
+    - who is the president of america
+    - write a poem
+    - tell me a story
+    - make me laugh
+    - what is your favorite color
+    - who created you
+    - what are you
+    - do you love me
+    - how old are you
+    - tell me a fun fact
+    - recommend a game
+    - what's for dinner
+    - how to cook pasta
+    - pizza recipe
+    - best smartphone under 500 dollars
+    - explain quantum physics
+    - solve my math problem
+    - what is photosynthesis
+    - translate hello into japanese
+    - write python code
+    - generate an image
+    - create a logo
+    - how to lose weight
+    - gym workout plan
+    - travel recommendations
+    - best places to visit in europe
+    - stock market prediction
+    - cryptocurrency advice
+    - latest football news
+    - tell me about mars
+    - who invented the internet
+    - movie recommendations for tonight
+    - explain black holes
+    - i am bored
+    - can you dance
+    - what is the meaning of life
+    - unrelated question
+
+
+- intent: affirm
+  examples: |
+    - yes
+    - yeah
+    - yup
+    - yep
+    - sure
+    - absolutely
+    - definitely
+    - of course
+    - okay
+    - ok
+    - alright
+    - sounds good
+    - good
+    - great
+    - awesome
+    - perfect
+    - nice
+    - cool
+    - fine
+    - works for me
+    - go ahead
+    - proceed
+    - continue
+    - let's do it
+    - that's correct
+    - exactly
+    - right
+    - correct
+    - yes please
+    - sure thing
+
+
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - nah
+    - not really
+    - i don't think so
+    - don't
+    - do not
+    - cancel
+    - stop
+    - never mind
+    - not now
+    - maybe later
+    - i changed my mind
+    - that's wrong
+    - incorrect
+    - no thanks
+    - not interested
+    - skip
+    - leave it
+    - forget it
+    - negative
+    - absolutely not
+    - no way
+    - don't continue
+    - stop this
+    - not needed
+    - not required
+    - reject
+    - decline
+    - i disagree
+
+- intent: thank_you
+  examples: |
+    - thanks
+    - thank you
+    - thanks a lot
+    - thank you so much
+    - appreciate it
+    - appreciated
+    - thx
+    - ty
+    - tysm
+    - many thanks
+    - thanks buddy
+    - thank you assistant
+    - thanks xeria
+    - helpful
+    - that helped
+    - great help
+    - much appreciated
+    - thanks for the information
+    - thanks for your support
+    - thanks for helping me
+    - thanks bank assistant
+    - brilliant
+    - amazing help
+    - wonderful
+    - perfect thank you
+    - got it thanks
+    - thanks got it
+    - cheers
+    - thanks mate
+    - thank you very much
+  
+
+- intent: repeat
+  examples: |
+    - repeat
+    - repeat that
+    - say that again
+    - can you repeat
+    - please repeat
+    - what did you say
+    - i missed that
+    - say it again
+    - explain again
+    - repeat the information
+    - repeat the details
+    - can you tell me again
+    - once more
+    - one more time
+    - repeat please
+    - i didn't catch that
+    - could you repeat that
+    - can you say it again
+    - tell me again
+    - repeat your answer
+    - repeat the response
+    - can you explain again
+    - say that once again
+    - i want to hear that again
+    - resend the information
+    - show it again
+    - repeat the last message
+    - can you restate that
+    - please say it again
+    - what was that
+
+
+- intent: confused
+  examples: |
+    - what
+    - huh
+    - i don't understand
+    - confused
+    - what do you mean
+    - didn't get it
+    - i didn't understand
+    - can you explain
+    - explain that
+    - not clear
+    - unclear
+    - what are you saying
+    - i'm confused
+    - can you clarify
+    - please clarify
+    - that doesn't make sense
+    - i'm not sure
+    - can you elaborate
+    - explain better
+    - simplify that
+    - i don't get it
+    - what does that mean
+    - please explain
+    - tell me in simple words
+    - make it simple
+    - that's confusing
+    - i'm lost
+    - elaborate please
+    - can you make that easier
+    - explain in detail
+  
+- intent: account_services
+  examples: |
+    - account
+    - accounts
+    - account services
+    - account help
+    - banking account
+    - manage account
+
+- intent: card_services
+  examples: |
+    - card
+    - cards
+    - card services
+    - card help
+    - debit card help
+    - credit card help
+
+- intent: loan_services
+  examples: |
+    - loan
+    - loans
+    - loan services
+    - loan help
+    - borrowing
+    - finance loan
+
+
+- intent: human_support
+  examples: |
+    - talk to a human
+    - connect me to an agent
+    - customer care
+    - speak with a representative
+    - i need human support
+    - transfer me to support
+    - live agent
+    - contact customer service
+    - i want to talk to a person
+    - connect me with bank staff

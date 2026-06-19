@@ -1,0 +1,196 @@
+version: "3.1"
+
+stories:
+
+  - story: greet then check balance
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: check_balance
+      - action: utter_check_balance
+
+  - story: greet then loan information
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: loan_information
+      - action: utter_loan_information
+
+  - story: greet then personal loan
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: personal_loan
+      - action: utter_personal_loan
+
+  - story: greet then home loan
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: home_loan
+      - action: utter_home_loan
+
+  - story: greet then lost card
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: card_lost
+      - action: utter_card_lost
+
+  - story: greet then card block
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: card_block
+      - action: utter_card_block
+
+  - story: greet then complaint registration
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: complaint_registration
+      - action: utter_complaint_registration
+
+  - story: greet then account opening
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: account_opening
+      - action: utter_account_opening
+
+  - story: greet then savings account
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: savings_account
+      - action: utter_savings_account
+
+  - story: greet then current account
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: current_account
+      - action: utter_current_account
+
+  - story: greet then debit card query
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: debit_card
+      - action: utter_debit_card
+
+  - story: greet then credit card query
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: credit_card
+      - action: utter_credit_card
+
+  - story: greet then net banking issue
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: net_banking_issue
+      - action: utter_net_banking_issue
+
+  - story: greet then pin reset
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: pin_reset
+      - action: utter_pin_reset
+
+  - story: greet then account statement
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: account_statement
+      - action: utter_account_statement
+
+  - story: greet then branch locator
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: branch_locator
+      - action: utter_branch_locator
+
+  - story: greet then fixed deposit
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: fixed_deposit
+      - action: utter_fixed_deposit
+
+  - story: greet check balance then goodbye
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: check_balance
+      - action: utter_check_balance
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: greet lost card then complaint registration
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: card_lost
+      - action: utter_card_lost
+      - intent: complaint_registration
+      - action: utter_complaint_registration
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: greet credit card then card block
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: credit_card
+      - action: utter_credit_card
+      - intent: card_block
+      - action: utter_card_block
+
+  - story: greet loan information then personal loan
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: loan_information
+      - action: utter_loan_information
+      - intent: personal_loan
+      - action: utter_personal_loan
+
+  - story: greet account opening then savings account
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: account_opening
+      - action: utter_account_opening
+      - intent: savings_account
+      - action: utter_savings_account
+
+  - story: greet net banking issue then complaint registration
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: net_banking_issue
+      - action: utter_net_banking_issue
+      - intent: complaint_registration
+      - action: utter_complaint_registration
+
+  - story: greet then fallback
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: fallback
+      - action: utter_fallback
+
+  - story: full session balance to goodbye
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: check_balance
+      - action: utter_check_balance
+      - intent: account_statement
+      - action: utter_account_statement
+      - intent: goodbye
+      - action: utter_goodbye
